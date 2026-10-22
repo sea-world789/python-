@@ -1,0 +1,15 @@
+#华氏度转换为摄氏度 C = （F -32）*5/9
+def temp_1(f_temp):
+    c_temp = (f_temp - 32)*5/9
+    return c_temp
+
+def main():
+    try:
+        f_temp = float(input(" 请输入华氏度温度："))
+        c_temp = temp_1(f_temp)
+        print(f"{c_temp}")
+    except ValueError:
+        print("错误，请输入正确数字")
+
+if __name__ == "__main__":
+    main()
